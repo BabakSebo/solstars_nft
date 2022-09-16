@@ -5,7 +5,6 @@ import {
   CardMedia,
   Divider,
   IconButton,
-  Link,
   AppBar,
   Toolbar,
 } from "@mui/material";
@@ -16,14 +15,15 @@ export default function NavBar() {
       <AppBar position="fixed" color="secondary">
         <Toolbar>
           <IconButton size="medium">
-            <CardMedia
-              component="img"
-              height="40"
-              image={require("../snoop.png")}
-              alt="logo"
-            />
+            <a href="#Home">
+              <CardMedia
+                component="img"
+                height="40"
+                image={require("../snoop.png")}
+                alt="logo"
+              />
+            </a>
           </IconButton>
-
           <Stack
             sx={{ justifyContent: "center" }}
             flexGrow="1"
@@ -31,63 +31,51 @@ export default function NavBar() {
             spacing={1}
             divider={<Divider orientation="vertical" flexItem />}
           >
-            {/* <Link
-              to="/"
-              sx={{
-                fontSize: "large",
-                color: "text.secondary",
-                fontFamily: "Silkscreen",
-              }}
-              component="button"
-              underline="none"
-            >
-              Test Link
-            </Link> */}
-            <Button
-              sx={{
-                fontSize: "large",
-                color: "text.secondary",
-                fontFamily: "Silkscreen",
-              }}
-            >
-              About
-            </Button>
-            <Button
-              sx={{
-                fontSize: "large",
-                color: "text.secondary",
-                fontFamily: "Silkscreen",
-              }}
-            >
-              Team
-            </Button>
-            <Button
-              sx={{
-                fontSize: "large",
-                color: "text.secondary",
-                fontFamily: "Silkscreen",
-              }}
-            >
-              Prizes/Giveaways
-            </Button>
-            <Button
-              sx={{
-                fontSize: "large",
-                color: "text.secondary",
-                fontFamily: "Silkscreen",
-              }}
-            >
-              FAQ
-            </Button>
+            <a href="#About">
+              <Button
+                sx={{
+                  fontSize: "large",
+                  color: "text.secondary",
+                  fontFamily: "Silkscreen",
+                }}
+              >
+                About
+              </Button>
+            </a>
+            <a href="#Team">
+              <Button
+                sx={{
+                  fontSize: "large",
+                  color: "text.secondary",
+                  fontFamily: "Silkscreen",
+                }}
+              >
+                Team
+              </Button>
+            </a>
+            <a href="#Prizes">
+              <Button
+                sx={{
+                  fontSize: "large",
+                  color: "text.secondary",
+                  fontFamily: "Silkscreen",
+                }}
+              >
+                Prizes/Giveaways
+              </Button>
+            </a>
+            <a href="#Faq">
+              <Button
+                sx={{
+                  fontSize: "large",
+                  color: "text.secondary",
+                  fontFamily: "Silkscreen",
+                }}
+              >
+                FAQ
+              </Button>
+            </a>
           </Stack>
-          {/* <IconButton size="medium">
-            <CardMedia
-              component="img"
-              height="40"
-              image={require("../snoop.png")}
-              alt="logo"
-            />
-          </IconButton> */}
         </Toolbar>
       </AppBar>
     </Box>

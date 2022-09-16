@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Prizes from "./pages/Prizes";
 import Faq from "./pages/Faq";
 import JoinDiscord from "./pages/JoinDiscord";
+import FollowUs from "./components/FollowUs";
 
 const theme = createTheme({
   palette: {
@@ -40,6 +41,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar />
         <Home />
+        <FollowUs />
         <div className="pageTwo">
           <Divider />
           <About />

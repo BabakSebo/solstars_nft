@@ -17,7 +17,7 @@ export default function Faq() {
     >
       <Divider />
       <Typography marginBottom={2}>
-        <h2>FAQ</h2>
+        <h2 id="Faq">FAQ</h2>
       </Typography>
 
       <Accordion

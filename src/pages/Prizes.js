@@ -6,7 +6,7 @@ export default function Prizes(props) {
   return (
     <Box>
       <Typography marginBottom={2}>
-        <h2>Prizes</h2>
+        <h2 id="Prizes">Prizes</h2>
       </Typography>
       <Card
         sx={{

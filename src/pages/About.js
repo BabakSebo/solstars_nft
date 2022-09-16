@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 export default function About() {
   return (
-    <div className="About">
+    <div className="About" id="About">
       <Typography marginBottom={2}>
         <h2>About</h2>
       </Typography>

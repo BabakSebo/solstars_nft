@@ -14,7 +14,7 @@ export default function Team(props) {
   return (
     <Box>
       <Typography marginBottom={2}>
-        <h2>Team</h2>
+        <h2 id="Team">Team</h2>
       </Typography>
       <Card
         sx={{
@@ -24,114 +24,107 @@ export default function Team(props) {
         }}
       >
         <Grid container spacing={1} justifyContent="center" marginTop="1rem">
-          <Card sx={{ m: 2, maxWidth: 250 }}>
+          <Card sx={{ m: 2, maxWidth: 100, minWidth: 100, maxHeight: 200 }}>
             <Grid>
               {loading ? (
                 <Skeleton variant="rectangular" width={190} height={190} />
               ) : (
                 <div>
-                  <CardContent>
-                    <Typography
-                      variant="h5"
-                      component="div"
-                      sx={{ fontSize: 12 }}
-                    >
-                      Founder
-                    </Typography>
-                  </CardContent>
+                  <CardContent></CardContent>
                   <CardMedia
                     component="img"
                     height="100"
                     image={require("../Gus.png")}
                     alt="Gus"
                   />
-                  <CardContent>
-                    <Typography>Gus</Typography>
-                  </CardContent>
+
+                  <Typography>Gus</Typography>
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    sx={{ fontSize: 10 }}
+                  >
+                    Founder
+                  </Typography>
                 </div>
               )}
             </Grid>
           </Card>
-          <Card sx={{ m: 2 }}>
+
+          <Card sx={{ m: 2, maxWidth: 100, minWidth: 100, maxHeight: 200 }}>
             <Grid>
               {loading ? (
                 <Skeleton variant="rectangular" width={190} height={190} />
               ) : (
                 <div>
-                  <CardContent>
-                    <Typography
-                      variant="h5"
-                      component="div"
-                      sx={{ fontSize: 12 }}
-                    >
-                      Artist
-                    </Typography>
-                  </CardContent>
+                  <CardContent></CardContent>
                   <CardMedia
                     component="img"
                     height="100"
                     image={require("../Aud.png")}
                     alt="Aud"
                   />
-                  <CardContent>
-                    <Typography>Aud</Typography>
-                  </CardContent>
+
+                  <Typography>Aud</Typography>
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    sx={{ fontSize: 10 }}
+                  >
+                    Designer
+                  </Typography>
                 </div>
               )}
             </Grid>
           </Card>
-          <Card sx={{ m: 2, maxWidth: 120 }}>
+          <Card sx={{ m: 2, maxWidth: 100, minWidth: 100, maxHeight: 200 }}>
             <Grid>
               {loading ? (
                 <Skeleton variant="rectangular" width={190} height={190} />
               ) : (
                 <div>
-                  <CardContent>
-                    <Typography
-                      variant="h5"
-                      component="div"
-                      sx={{ fontSize: 12 }}
-                    >
-                      Developer
-                    </Typography>
-                  </CardContent>
+                  <CardContent></CardContent>
                   <CardMedia
                     component="img"
                     height="100"
                     image={require("../che.png")}
                     alt="Sebo"
                   />
-                  <CardContent>
-                    <Typography>Sebo</Typography>
-                  </CardContent>
+
+                  <Typography>Sebo</Typography>
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    sx={{ fontSize: 10 }}
+                  >
+                    Developer
+                  </Typography>
                 </div>
               )}
             </Grid>
           </Card>
-          <Card sx={{ m: 2, maxWidth: 120 }}>
+          <Card sx={{ m: 2, maxWidth: 100, minWidth: 100, maxHeight: 200 }}>
             <Grid>
               {loading ? (
                 <Skeleton variant="rectangular" width={190} height={190} />
               ) : (
                 <div>
-                  <CardContent>
-                    <Typography
-                      variant="h5"
-                      component="div"
-                      sx={{ fontSize: 12 }}
-                    >
-                      Community
-                    </Typography>
-                  </CardContent>
+                  <CardContent></CardContent>
                   <CardMedia
                     component="img"
                     height="100"
                     image={require("../Dim.png")}
                     alt="Aud"
                   />
-                  <CardContent>
-                    <Typography>Gunju</Typography>
-                  </CardContent>
+
+                  <Typography>Gunju</Typography>
+                  <Typography
+                    variant="h5"
+                    component="div"
+                    sx={{ fontSize: 10 }}
+                  >
+                    Community Manager
+                  </Typography>
                 </div>
               )}
             </Grid>
